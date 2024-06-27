@@ -1,13 +1,12 @@
-package com.project_special_lecture.database;
+package com.project_special_lecture.project.database;
 
-import com.project_special_lecture.special_lecture.entity.*;
-
-import org.springframework.stereotype.Component;
+import com.project_special_lecture.project.special_lecture.entity.*;
 
 import java.util.List;
 import java.util.ArrayList;
+import lombok.RequiredArgsConstructor;
 
-@Component
+@RequiredArgsConstructor
 public class LectureApplyHistoryTable {
     private final List<LectureApplyHistory> table = new ArrayList<>();
 

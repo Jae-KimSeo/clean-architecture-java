@@ -1,8 +1,10 @@
-package com.project_special_lecture.special_lecture.service;
+package com.project_special_lecture.project.special_lecture.service;
 
-import com.project_special_lecture.special_lecture.repository.*;
-import com.project_special_lecture.special_lecture.domain.*;;
+import com.project_special_lecture.project.special_lecture.domain.*;
+import com.project_special_lecture.project.special_lecture.repository.*;
+import lombok.RequiredArgsConstructor;;
 
+@RequiredArgsConstructor
 public class SpecialLectureServiceImpl implements SpecialLectureService {
     private LectureApplyHistoryRepository lectureApplyHistoryRepository;
     

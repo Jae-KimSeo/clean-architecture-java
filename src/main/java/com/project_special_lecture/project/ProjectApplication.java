@@ -3,8 +3,6 @@ package com.project_special_lecture.project;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import org.springframework.web.bind.annotation.*;
-
 @SpringBootApplication
 public class ProjectApplication {
 
@@ -12,12 +10,4 @@ public class ProjectApplication {
 		SpringApplication.run(ProjectApplication.class, args);
 	}
 
-}
-
-@RestController
-class Helloworld {
-	@GetMapping("/")
-	public String greet() {
-		return "Hello!";
-	}
 }

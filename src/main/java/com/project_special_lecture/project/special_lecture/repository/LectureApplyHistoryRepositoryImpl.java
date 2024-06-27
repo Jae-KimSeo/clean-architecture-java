@@ -1,8 +1,10 @@
-package com.project_special_lecture.special_lecture.repository;
+package com.project_special_lecture.project.special_lecture.repository;
 
-import com.project_special_lecture.special_lecture.domain.*;
-import com.project_special_lecture.database.*;
+import com.project_special_lecture.project.database.*;
+import com.project_special_lecture.project.special_lecture.domain.*;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor
 public class LectureApplyHistoryRepositoryImpl implements LectureApplyHistoryRepository {
     private LectureApplyHistoryTable lectureApplyHistoryTable;
 
