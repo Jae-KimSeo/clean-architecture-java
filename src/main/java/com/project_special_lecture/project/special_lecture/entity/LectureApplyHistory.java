@@ -3,8 +3,12 @@ package com.project_special_lecture.project.special_lecture.entity;
 import com.project_special_lecture.project.special_lecture.domain.*;
 import java.time.LocalDateTime;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.RequiredArgsConstructor;
 
+@Getter
+@Setter
 @Entity
 @Table(name="lecture")
 public class LectureApplyHistory{

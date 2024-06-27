@@ -1,7 +1,11 @@
 package com.project_special_lecture.project.special_lecture.repository;
 
-import com.project_special_lecture.project.special_lecture.domain.*;
+import com.project_special_lecture.project.special_lecture.entity.*;
+
+import java.util.List;
 
 public interface LectureApplyHistoryRepository {
-    LectureApplyHistoryDomain save(long userId);  
+    Long create(LectureApplyHistory lectureApplyHistory);
+    LectureApplyHistory findById(Long lectureApplyId);
+    List<LectureApplyHistory> findByUserId(Long userId);
 }
