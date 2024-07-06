@@ -1,8 +1,8 @@
 package com.project_special_lecture.project.special_lecture.service;
 
-import com.project_special_lecture.project.special_lecture.domain.*;
+import java.time.LocalDateTime;
 
 public interface SpecialLectureService {
-    LectureApplyHistoryDomain applyLecture(long userId);
+    Long applyLecture(Long lectureApplyId, Long userId, boolean applied, LocalDateTime appliedTime, LocalDateTime registeredTime);
 }
   
